@@ -60,4 +60,5 @@ The more in-depth functions of wfuzz are not written.
 As the practitioner is familiar with go development, so only roughly achieved part of the function, in fact, I also think the code is a little bloated, if there are suggestions and optimization ideas, I will always be ready to learn your suggestions
 
 
+![L42K~}L$$KL434F24 RINYN](https://user-images.githubusercontent.com/106241874/223915601-35a7edcf-ef56-42a3-b9f1-513af3a99e21.jpg)
 
