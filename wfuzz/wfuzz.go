@@ -25,7 +25,7 @@ func Wfuzz(targetUrl string, payloadList []string, concurrency int, showSuccess 
 				wg.Done()
 			}()
 
-			urlParts := []string{targetUrl, p}
+			urlParts := []string{targetUrl, "/" + p}
 			url := strings.Join(urlParts, "")
 			resp, err := http.Head(url)
 			if err != nil {
