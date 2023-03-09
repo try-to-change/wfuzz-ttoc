@@ -5,6 +5,8 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	"regexp"
+	"strings"
 	"time"
 	"wfuzz-ttoc/log"
 	"wfuzz-ttoc/payload"
@@ -47,8 +49,23 @@ func main() {
 		flag.PrintDefaults()
 		return
 	}
+
+	// 判断是否已经包含 http 或 https
+	re := regexp.MustCompile(`^(https?://)?(.*)$`)
+	match := re.FindStringSubmatch(targetUrl)
+
+	// 如果没有 https 或 www，则添加它们
+	if match[1] == "" {
+		// 如果没有 http 或 https，则添加 https
+		targetUrl = "https://" + strings.TrimPrefix(targetUrl, "http://")
+	}
+	if match[2] == "" {
+		targetUrl = "www." + targetUrl
+	}
+
 	// 解析 payloads
 	payloadList, err1 := payload.ParsePayloads(payloads)
+
 	if err1 != nil {
 		log.LogError(err1)
 		return
