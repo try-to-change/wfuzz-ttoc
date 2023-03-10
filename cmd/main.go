@@ -31,8 +31,8 @@ var (
 
 func init() {
 	flag.StringVar(&targetUrl, "u", "", "Target URL")
-	flag.StringVar(&payloads, "p", "", "Payloads")
-	flag.IntVar(&concurrency, "c", 10, "Number of concurrency")
+	flag.StringVar(&payloads, "p", "./dicc.txt", "Payloads")
+	flag.IntVar(&concurrency, "c", 3, "Number of concurrency")
 	flag.StringVar(&showSuccess, "s", "200/404/303", "Website return code")
 	flag.StringVar(&outputFile, "o", "", "Output file")
 }
@@ -44,10 +44,13 @@ func main() {
 	flag.Parse()
 
 	//检测是否有命令行参数
-	if targetUrl == "" || payloads == "" {
-		fmt.Println("Usage: wfuzz -u <url> -p <payloads> [options]")
+	if targetUrl == "" {
+		fmt.Println("Usage: wfuzz -u <url> [options]")
 		flag.PrintDefaults()
 		return
+	}
+	if payloads == "" {
+		payloads = "./dicc.txt"
 	}
 
 	// 判断是否已经包含 http 或 https
