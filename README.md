@@ -43,11 +43,8 @@ The main writing process and functions are as follows.
 
 ### Use case diagram
 
-![image-20230308202433893](README/image-20230308202433893.png)
-
-![Inkedimage-20230308202510969](README/Inkedimage-20230308202806751.jpg)
-
-![image-20230308202806751](README/InkedInkedimage-20230308202510969.jpg)
+![image](https://user-images.githubusercontent.com/106241874/224214750-af956ac8-3efa-4650-865f-a799c468295d.png)
+![image](https://user-images.githubusercontent.com/106241874/224214829-77a405d6-e0c5-4cfb-aeee-ad79cc776427.png)
 
 ### Improve
 
