@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d1ee216-a7d7-42ab-a074-c18b06b2c9f4" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/cmd.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/cmd.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/cmd.exe.i64" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payload/payload.go" beforeDir="false" afterPath="$PROJECT_DIR$/payload/payload.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wfuzz/wfuzz.go" beforeDir="false" afterPath="$PROJECT_DIR$/wfuzz/wfuzz.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/400_blacklist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/403_blacklist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/500_blacklist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/dicc.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/user-agents.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/wordlists/ws-files.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

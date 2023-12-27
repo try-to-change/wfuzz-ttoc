@@ -31,7 +31,7 @@ var (
 
 func init() {
 	flag.StringVar(&targetUrl, "u", "", "Target URL")
-	flag.StringVar(&payloads, "p", "./wordlists/dicc.txt", "Payloads")
+	flag.StringVar(&payloads, "p", "../payload/wordlists/dicc.txt", "Payloads")
 	flag.IntVar(&concurrency, "c", 3, "Number of concurrency")
 	flag.StringVar(&showSuccess, "s", "200/404/303/500", "Website return code")
 	flag.StringVar(&outputFile, "o", "", "Output file")
