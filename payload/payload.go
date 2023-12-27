@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// 解析 payloads
+// ParsePayloads 解析 payloads
 func ParsePayloads(payloads string) ([]string, error) {
 	var payloadList []string
 

@@ -35,15 +35,19 @@ func Wfuzz(targetUrl string, payloadList []string, concurrency int, showSuccess 
 			}
 
 			if showSuccess == "200" {
-				if resp.Status == "200" {
+				if resp.Status == "200 OK" {
 					fmt.Printf("%s (%s)\n", url, resp.Status)
 				}
 			} else if showSuccess == "404" {
-				if resp.Status == "404" {
+				if resp.Status == "404 Not Found" {
 					fmt.Printf("%s (%s)\n", url, resp.Status)
 				}
 			} else if showSuccess == "303" {
-				if resp.Status == "303" {
+				if resp.Status == "303 See Other" {
+					fmt.Printf("%s (%s)\n", url, resp.Status)
+				}
+			} else if showSuccess == "500" {
+				if resp.Status == "500 Internal Server Error" {
 					fmt.Printf("%s (%s)\n", url, resp.Status)
 				}
 			} else {
